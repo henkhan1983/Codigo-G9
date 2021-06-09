@@ -5,12 +5,27 @@
 }
 
 .familia{
-  /* le puedo poner varios tipos de fuente si no encuentra */
+  /* le puedo poner varios tipos de fuente, si no encuentra una fuente, pasara a la siguiente */
   font-family:'cameo', Arial, Helvetica, sans-serif;
 }
 /* se pone en '' cuando vamos a utilizar un estilo externo (url) y tambien cuando el nombre se encuentra separado por espacio*/
 .google{font-family: 'Open Sans', sans-serif;
   /* el grosor de la fuente(letra) */
   font-weight: 800;
+}
 
+.fontstyle{
+  font-style: italic;
+}
+
+.textindent{
+  text-indent: 20px;
+}
+
+.wordspacing{
+  word-spacing: 25px;
+}
+
+.lineheigth{
+  line-height: 30px;
 }
