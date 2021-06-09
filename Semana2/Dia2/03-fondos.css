@@ -30,4 +30,7 @@ body{
   border: 3px solid darkslateblue;
   /* border-radius: 200px; */
   border-radius: 50%;
+  /* box-shadow:ejeX ejeY size(tamaño) */
+  /* div, h1, p, headers */
+  box-shadow: 5px 10px 20px skyblue;
 }
