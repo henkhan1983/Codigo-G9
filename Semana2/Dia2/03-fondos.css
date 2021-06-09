@@ -1,0 +1,33 @@
+body{
+  background-image: url('./fondo_juego1.jpg');
+  /* en una imagen siempre se va a cambiar normalmente el ancho dificilmente en la altura que tenga la imagen */
+  background-size: 400px; /*ancho*/
+  /* repeat-x, repeat-y, no-repeat */
+  background-repeat: no-repeat;
+}
+
+.card{
+  width: 400px;
+  height: 600px;
+  border: 2px solid gray;
+  background-image: url(./fondo_juego.jpg);
+  /* se utiliza para ajustar el tamaño(altura) de la imagen al tamaño del div */
+  background-size: cover;
+  /* se utiliza para centrar la imagen en el div sin importar que sobre parte de la imagen(laterales) */
+  background-position: center;
+  /* border:grosor estilo color */
+  /* estilo => dotted, dashed, solid, double */
+  border: 5px solid red;
+  /* border-radius: 20px; */
+  /* border-radius:topleft(tl),topright(tr),bottomright(br),bottomleft(bl), va en sentido del horario del reloj */
+  border-radius: 10px 20px 30px 40px;
+}
+
+.circulo{
+  /* alto y ancho iguales */
+  width: 400px;
+  height: 400px;
+  border: 3px solid darkslateblue;
+  /* border-radius: 200px; */
+  border-radius: 50%;
+}
