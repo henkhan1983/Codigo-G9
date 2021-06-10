@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.papa{
+  width: 500px;
+  height: 1500px;
+  border: 1px solid rebeccapurple;
+  margin: 20px;
+  /* se utiliza como punto de referencia para los hijos */
+  position: relative;
+}
+
+.hijo{
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+}
+
+.caja1{
+background-color: yellow;
+}
+
+.caja2{
+  background-color: purple;
+  /* position: absolute; permite mover un elemento considerando al tamaño de tu pantalla y el navegador, siempre y cuando no exista en el padre un position si fuera el caso debera considerar al padre */
+  position: absolute;
+  top:50px;/* parte superior */
+  left:150px;/*lado izquierdo*/
+  z-index: 19;
+}
+
+.caja3{
+  background-color: lightseagreen;
+  position: absolute;
+  z-index: 9;/* indica la posicion en el eje z(profundidad)*/
+}
+
+.caja4{
+  background-color: lightsteelblue;
+  position:fixed;
+  bottom:50px;/*lado inferior*/
+  right: 180px;/*lado rerecho*/
+}
