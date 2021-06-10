@@ -1,0 +1,20 @@
+/* (*) afecta a todo */
+*{
+  border: 1px solid red;
+  /* RESET */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  padding: 20;
+  margin: 0;
+  width: 300px;
+  height: 200px;
+  /* tamaño pre definido(indica que el padding y el borde
+   esten contenidos en width y height */
+  /* box.sizing:border-box; hara que las medidas que indiquemos incliyan el 
+  borde y el padding */
+  box-sizing: border-box;
+}
