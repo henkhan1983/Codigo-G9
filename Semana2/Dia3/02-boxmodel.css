@@ -1,7 +1,7 @@
 /* (*) afecta a todo */
 *{
   border: 1px solid red;
-  /* RESET */
+  /* RESET todo a 0 */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,4 +17,13 @@ h1{
   /* box.sizing:border-box; hara que las medidas que indiquemos incliyan el 
   borde y el padding */
   box-sizing: border-box;
+}
+
+span{
+  border: 1px solid gray;
+  background-color: lightgreen;
+  /* display: inline: se ajusta al contenido y si hay espacio se acomoda
+  display: block:si sobra espacio da igual ocupara todo el ancho acomodonadose uno encima de otro */
+  display: inline;
+  width: 600px;
 }
