@@ -20,10 +20,34 @@ body{
     pink);
 }
 
-.peru{
+.bandera{
   width: 800px;
   height: 400px;
   background-image: linear-gradient(
-    90deg, red, white, white, red
+    90deg, 
+    red 33%, 
+    white 33%, 
+    white 66.66%, 
+    red 66.66%
   );
+}
+
+.gradiente-circular{
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(
+    circle,
+    yellow,
+    teal
+  );
+
+  .another-one{
+    width: 500px;
+    height: 400px;
+    background-image: radial-gradient( circle at top left,
+    #333,
+    #333 50%,
+    #eee 75%,
+    #333 75%
+  ); 
 }
