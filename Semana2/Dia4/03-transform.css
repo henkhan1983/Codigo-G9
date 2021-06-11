@@ -1,0 +1,15 @@
+.transformacion{
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+  transform: scale(5,2) !important;
+}
+
+.girl{
+  width: 500px;
+  height: 500px;
+  /* traslate(ejex, ejey) mueve el elemento sin imporatr su ubicacion
+  translate3d(ejex, ejey, ejez(profundidad); */
+  transform: skew(25deg, 21deg) rotate(30deg) translate3d(100px, 100px, -100px);
+  
+}
