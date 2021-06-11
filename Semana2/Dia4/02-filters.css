@@ -1,0 +1,29 @@
+.filtro{
+  height: 500px;
+  filter: blur(3px) grayscale(1);
+}  
+
+.filtro:hover{
+  /* filter: none, brightness(3) */
+  filter: brightness(3);
+}
+
+.filtro2{
+  height: 500px;
+  filter: contrast(5) opacity(50%) invert(100);
+}
+
+.filtro3{
+  height: 500px;
+  filter: sepia(80%) saturate(20%);
+}
+
+.filtro4{
+  height: 500px;
+  filter: blur(1px) grayscale(1) sepia(80%);
+}
+
+.filtro4:hover{
+  border-radius: 50%;
+  filter: brightness(1) saturate(20%);
+}
