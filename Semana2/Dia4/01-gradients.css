@@ -19,7 +19,7 @@ body{
     blue, 
     pink);
 }
-
+/* bandera de peru , con gradientes */
 .bandera{
   width: 800px;
   height: 400px;
@@ -53,12 +53,24 @@ body{
   ); 
 }
 
-.gradiente-conico{
+.gradiente-conico {
   width: 500px;
   height: 400px;
-  
+
+  background: conic-gradient(
+    from 90deg,
+    red,
+    yellow,
+    lime,
+    aqua,
+    blue,
+    magenta,
+    red
+  );
 }
-.pie{
-  width: 500px;
-  height: 400px;
+
+.pie {
+
+  height: 500px;
+  background: conic-gradient(lime 40%, yellow 0 70%, red 0);
 }
