@@ -1,0 +1,22 @@
+.animacion{
+  width: 500px;
+  height: 400px;
+  animation: miAnimacion 4s infinite;
+}
+
+@keyframes miAnimacion {
+  0%{
+    background-color: aqua;
+  }
+  50%{
+    background-color: violet;
+    transform: scale(5);
+  }
+  75%{
+    transform: scale(1);
+  }
+  100%{
+    display: inline;
+    background-color: red;
+  }
+}
