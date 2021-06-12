@@ -2,11 +2,12 @@
   background-color: black;
   color: white;
   font-weight: bold;
+  text-decoration: none;
 }
 
 nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
 }
 
 .etiqueta-logo{

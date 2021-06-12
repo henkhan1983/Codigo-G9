@@ -18,6 +18,13 @@
   background-color: yellow;
   border-radius: 20px;
 }
+p{  
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: yellow;
+  color: black;
+}
 .grande{
   flex-grow: 2;
 }
@@ -26,12 +33,4 @@
 }
 .pequenho{
   flex-grow: 0.2;
-}
-p{
-  /* color: white; */
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: yellow;
-  color: black;
 }
