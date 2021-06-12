@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 1px solid teal;
+  border-radius: 10px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: teal;
+  flex-grow: 5;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: teal;
+  flex-grow: 0.2;
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  width: 100%;
+}
+.banner {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+  max-height: 500px;
+}
+
+.contenedor-medio {
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+  /* justify-content: center; */
+}
+.contenido {
+  max-width: 300px;
+  max-height: 300px;
+  border: 1px solid teal;
+  border-radius:10px;
+  margin: 10px;
+  padding: 5px;
+  overflow: auto;
+}
+.contenido-body{
+  display: flex;
+  flex-direction: column;
+  padding:10px 20px 20px 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.contenido-body-titulo{
+  color: black;
+}
+.contenido-body-texto{
+  color: black;
+  font-size: medium;
+  justify-content:center;
+}
+.imagen-contenido {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius:5px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  width: 100%;
+  background-color:teal;
+  justify-content:space-between
+}
+.contenidos{
+  margin: 5px;
+
+}
+.contenedor-links{
+  display: flex;
+  flex-direction: column;
+  background-color:teal;
+}
+
+.links-footer,.red-social-texto{
+  text-decoration:none ;
+  color: white;
+  margin:10px;
+}
+.contenido-footer-redes-sociales{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.red-social{
+  display: flex;
+  flex-direction: row;
+}
+.red-social-imagen{
+  max-width: 30px;
+}
+.contenido-footer-imagen{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+.gerente{
+  max-width:100px;
+  max-height:150px;
+}
+.gerente-titulo,.gerente-texto {
+color:white;
+}
