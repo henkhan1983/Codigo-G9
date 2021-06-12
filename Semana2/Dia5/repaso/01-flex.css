@@ -1,25 +1,25 @@
 *{
   background-color: black;
 }
-
+/* caja horizontal */
 .contenedor-fila{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row;/*row=horizontal*/
+  flex-wrap: wrap;/*te permite saltar hacia abajo cuando se disminuye o achica la pantalla */
 }
-
+/* elementos dentro de caja horizontal */
 .contenido-fila{
   width: 120px;
   height: 120px;
   margin: 5px;
   background-color: blue;
 }
-
+/* caja vertical */
 .contenedor-columna{
   display: flex;
   flex-direction: column;
 }
-
+/* elementos dentro de caja vertical */
 .contenido-columna{
   border-radius: 50%;
   width: 100px;
@@ -34,4 +34,9 @@
 
 .elemento-pequenho{
   flex-grow: 1;
+}
+
+.caja-principal{
+  display: flex;
+  flex-direction: row;
 }
