@@ -1,0 +1,15 @@
+.contenedor-fila{
+  display: flex;
+  flex-direction: row;
+}
+
+.contenido{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: blue;
+}
+
+.contenedor-columna{
+
+}
