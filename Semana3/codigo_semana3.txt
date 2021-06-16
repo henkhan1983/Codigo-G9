@@ -3,3 +3,5 @@ Dia1
 
 *https://www.flaticon.es/    -------- iconos gratuitos y de paga
 *https://fonts.google.com/    estilo de letra
+*https://cssreference.io/	documentacion css
+*https://flexboxfroggy.com/#es		practicar flex
