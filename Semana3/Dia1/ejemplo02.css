@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid gray; */
+}
+
+/* variable}s */
+:root{
+  --color-primario:#FB8F1D;
+}
+
+
+nav{
+  font-size: 'Poppins', sans-serif;
+  display: flex;
+  /* justifica horizontalmente
+  space-between -- de manera equidistante */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* todos los img dentro del nav*/
+nav img{
+  max-width: 40px;
+}
+
+nav ul{
+  display: flex;
+  /* alineacion en forma vertical */
+  align-items: center;
+}
+
+/* tdoso los li dentro del nav */
+nav li{
+  list-style: none;
+  /* margin: arribaabajo costados */
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* del nav el elemento de tipo li numero 4 */
+nav li:nth-of-type(4){
+  margin-right: 5px;
+}
+nav li:nth-of-type(5){
+  margin-left: 5px;
+}
+
+button{
+  outline: none;
+  cursor: pointer;
+}
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.btn-register{
+  background-color: var(--color-primario);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid var(--color-primario);
+}
+
+.btn-login{
+  background-color: white;
+  color: var(--color-primario);
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid var(--color-primario);
+}
