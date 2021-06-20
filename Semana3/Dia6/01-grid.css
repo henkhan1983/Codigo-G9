@@ -1,0 +1,18 @@
+*{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor{
+  border: 2px solid red;
+  display: grid;
+  /* if representa una division del espacio libre*/
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: 150px 150px 150px;
+}
+
+.item{
+  border: 2px solid blue;
+}
