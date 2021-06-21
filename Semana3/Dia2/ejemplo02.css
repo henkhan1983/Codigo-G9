@@ -8,6 +8,7 @@
 /* variables siempre se ponen en el root */
 :root{
   --color-primario:#FB8F1D;
+  --color-secundario:#1ABE84;
 }
 
 
@@ -79,4 +80,56 @@ button{
   padding: 8px;
   border-radius: 5px;
   border: 2px solid var(--color-primario);
+}
+
+/* agregando RWD(responsive web designe) al menu */
+
+#check{
+  /* escondiendo al check */
+  position: absolute;
+  /* visibility: hidden; oculta al check*/
+  visibility: hidden;
+  z-index: -99;
+}
+
+@media screen and (max-width:768px) {
+  /* menu */
+  .menu{
+    position: fixed;
+    background-color: var(--color-secundario);
+    width: 100%;
+    /* viewport height */
+    height: 100vh;
+    top: 0;
+    right: 0;/*esto me servira para escorder mi menu*/
+    text-align: center;
+    /* padding: arribaabajo costados */
+    padding: 100px 0;
+    z-index: 20;
+    flex-direction: column;
+  }
+
+  .menu li{
+    padding: 20px;
+    font-size: 26px;
+  }
+  
+  .btn-login, .btn-register{
+    font-size: 26px;
+  }
+
+  .hide-menu-btn{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  .show-menu-btn{
+    display: block;
+    padding-right: 10px;
+  }
+/* la pseudoclase checked hace referencia si mi checkbox esta activado */
+  #check:checked ~ .menu{
+    right: 0;
+  }
 }
