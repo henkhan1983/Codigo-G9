@@ -16,3 +16,6 @@ Dia 5
 https://threejs.org/
 https://animejs.com/
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
+
+Dia6
+https://unsplash.com/
