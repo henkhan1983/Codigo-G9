@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid gray; */
+}
+
+/* variables siempre se ponen en el root */
+:root{
+  --color-primario:#FB8F1D;
+  --color-secundario:#1ABE84;
+}
+
+
+nav{
+  font-size: 'Poppins', sans-serif;
+  display: flex;
+  /* justifica(permilte alinear horizontalmente
+  space-evenly -- el mismo espacio tanto laterales como al medio.
+  space-around -- el mismo espacio en los costados
+  space-between -- de manera equidistante(el mismo espacio en el medio pero no laterales */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* todos los img dentro del nav*/
+nav img{
+  max-width: 40px;
+}
+
+nav ul{
+  /* display:flex (por defecto esta en row) */
+  display: flex;
+  /* alineacion en forma vertical para flex 
+  align-items: flex-end(alinear en la parte inferior
+  align-items: flex-start(alinear en la parte superior.
+  lign-items: center(alinear en la parte superior.
+  */
+  align-items: center;
+}
+
+/* todos los li dentro del nav */
+nav li{
+  /* list-style: indica a las decoraciones como *, . -, etc; */
+  list-style: none;
+  /* margin: arribaabajo costados */
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* del nav el elemento de tipo li numero 4 */
+nav li:nth-of-type(4){
+  margin-right: 5px;
+}
+nav li:nth-of-type(5){
+  margin-left: 5px;
+}
+
+.li__disabled {
+  color: var(--color-dark) !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button{
+  outline: none;
+  cursor: pointer;
+}
+
+.container{
+  max-width: 900px;
+  /* margin: 0(arribaabajo) auto(los 2 lados laterales) */
+  margin: 0 auto;
+}
+
+.btn-register{
+  background-color: var(--color-primario);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid var(--color-primario);
+}
+
+.btn-login{
+  background-color: white;
+  color: var(--color-primario);
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid var(--color-primario);
+}
+
+/* agregando RWD(responsive web designe) al menu */
+
+#check{
+  /* escondiendo al check */
+  position: absolute;
+  /* visibility: hidden; oculta al check*/
+  visibility: hidden;
+  z-index: -99;
+}
+
+.menu{
+  transition: 0.5s;
+}
+
+.show-menu-btn, .hide-menu-btn{
+  cursor: pointer;
+  /* cambio de tamaño font-size */
+  font-size: 30px;
+  display: none;
+
+}
+
+/* header */
+header{
+  display:flex;
+}
+
+/* izquierda: header-content */
+.header-content{
+  width:45%;
+  padding:30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* una buena práctica es definir las propiedad comunes para varios elementos ej.
+h1,h2,h3,h4,h5,h6 {font-family: 'Lato';} */
+
+h1 {
+  font-size: 64px;
+  /* font-weight:bold; */
+}
+
+h2 {
+  font-size: 36px;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-content input{
+  padding:15px;
+  border-radius: 5px;
+}
+
+#btn-search{
+  background-color: var(--color-primario);
+  padding:12px;
+  color:white;
+  width:40%;
+  min-width:150px;
+  border-radius:10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* derecha: header-img */
+.header-img{
+  width:55%;
+  padding:30px;
+}
+
+.header-img > img{
+  max-width:100%;
+}
+
+@media screen and (max-width:768px) {
+  /* menu */
+  .menu{
+    position: fixed;
+    background-color: var(--color-secundario);
+    width: 100%;
+    /* viewport height */
+    height: 100vh;
+    top: 0;
+    right: -100%;/*esto me servira para escorder mi menu*/
+    text-align: center;
+    /* padding: arribaabajo costados */
+    padding: 100px 0;
+    z-index: 20;
+    flex-direction: column;
+  }
+
+  .menu li{
+    padding: 20px;
+    font-size: 26px;
+  }
+  
+  .btn-login, .btn-register{
+    font-size: 26px;
+  }
+
+  .hide-menu-btn{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  .show-menu-btn, .hide-menu-btn{
+    display: block;
+    padding-right: 10px;
+  }
+/* la pseudoclase checked hace referencia si mi checkbox esta activado */
+/* ~ este simbolo/selector hace referencia a los elementos que esten despues del #check en la estructura, en 
+este caso menu */
+  #check:checked ~ .menu{
+    right: 0;
+  }
+
+  /* header */
+  header{
+    flex-direction: column;
+    align-items:center
+  }
+
+  .header-content{
+    min-height: 300px;
+  }
+}

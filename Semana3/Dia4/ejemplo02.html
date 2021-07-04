@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./ejemplo02.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <img src="./assets/imag/icon.png" alt="logo">
+      <input type="checkbox" id="check">
+
+      <label for="check" class="show-menu-btn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <ul class="menu">
+        <li class="li__disabled">Home</li>
+        <li class="li__disabled">Destinos</li>
+        <li class="li__disabled">About</li>
+        <li class="li__disabled">Compañeros</li>
+        <li>
+          <button class="btn-login">
+            Login
+          </button>
+        </li>
+        <li>
+          <button class="btn-register">
+            Register
+          </button>
+        </li>
+        <li>
+          <label for="check" class="hide-menu-btn">
+            <i class="fas fa-times"></i>
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="header-content">
+        <h1>Explora y Viaja</h1>
+        <label>Buscador de Sitios</label>
+        <input
+            class="input-search"
+            type="text"
+            placeholder="Ingrese un sitio"
+          >
+          <button id="btn-search">
+            Explorar
+          </button>
+      </div>
+      <div class="header-img">
+        <img src="./assets/imag/img1.png" alt="img-header">
+      </div>
+    </header>
+  </div>
+</body>
+
+</html>
