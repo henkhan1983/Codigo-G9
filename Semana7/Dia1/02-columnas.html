@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <style>
+    .oscuro {
+      background-color: steelblue
+    }
+
+    .claro {
+      background-color: lightsalmon;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h2>Columnas</h2>
+    <!-- Para utilizar las columnas de bootstrap tenemos que añadirlas dentro de un "row" -->
+    <div class="row">
+      <div class="col oscuro">
+        Mi 1ra columna
+      </div>
+      <div class="col claro">
+        Mi 2da columna
+      </div>
+      <div class="col oscuro">
+        Mi 3ra columna
+      </div>
+      <div class="col claro">
+        Mi 4ta columna
+      </div>
+      <div class="col oscuro">
+        Mi 5ta columna
+      </div>
+      <div class="col claro">
+        Mi 6ta columna
+      </div>
+    </div>
+    <hr>
+    <h2>Columnas Definidas</h2>
+    <!-- Las 12 columnas se definen en el row -->
+    <div class="row">
+      <div class="col-5 claro">
+        Columna de 8
+      </div>
+      <div class="col-5 oscuro">
+        Columna de 4
+      </div>
+      <!-- Si el ancho de las columnas no suma 12, la que sobresalga va a colapsar,
+        colapsar: se va a disponer después de los otros elementos en la parte inferior -->
+      <div class="col-3 claro">
+        Columna adicional
+      </div>
+    </div>
+    <hr>
+    <h2>Columnas Responsivas</h2>
+    <h3><code>col-xl-#</code></h3>
+    <h5>xl -> las columnas colapsan si el ancho disponible es menor a 1200px, cuando colapsan c/col ocupará 12 columnas
+      y se pondrán una debajo de otra</h5>
+    <div class="row">
+      <div class="col-xl-8 oscuro">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, numquam!
+        </p>
+      </div>
+      <div class="col-xl-4 claro">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, numquam!
+        </p>
+      </div>
+    </div>
+    <hr>
+    <h3><code>col-md-#</code></h3>
+    <h5>md -> las columnas colapsan a menos de 768px de ancho</h5>
+    <div class="row">
+      <div class="col-md-4 oscuro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-md-4 claro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-md-4 oscuro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <hr>
+    <h3><code>col-lg-#</code></h3>
+    <h5>lg -> las columnas colapsan a menos de 992px</h5>
+    <div class="row">
+      <div class="col-lg-7 oscuro">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquid?
+        </p>
+      </div>
+      <div class="col-lg-5 claro">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquid?
+        </p>
+      </div>
+    </div>
+    <hr>
+    <h3><code>col-sm-#</code></h3>
+    <h5>sm -> las columnas colapsan a menos de 576px</h5>
+    <div class="row">
+      <div class="col-sm-4 oscuro">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="col-sm-4 claro">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="col-sm-4 oscuro">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <h2>Columnas responsive combinadas</h2>
+    <h5>
+      Podemos combinar las clases previamente vistas, para que los div con la clase "col" ocupen diferentes tamaños con
+      diferentes breakpoints.
+      Si cambia el ancho disponible, podemos distribuir el contenidoi de diferentes maneras según los breakpoints que
+      indiquemos.
+    </h5>
+    <div class="row">
+      <!-- estamos indicando que las columnas ocupen diferentes anchos según el breakpoint -->
+      <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 oscuro">
+        Noticia Principal: Vacunaton Todos los fines de Semana!
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 claro">
+        Noticia Mediana Importancia: Dolár regresa a 3.2
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-4 oscuro">
+        Publicidad: suscribete a CodiGO
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
