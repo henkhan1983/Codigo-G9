@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- <style>
+  .bg-primary{
+    background-color: lightsalmon !important;
+  } -->
+  </style>
+</head>
+
+<body>
+  <!-- navbar común y silvestre -->
+  <!-- navbar-expand-NM, NM es el breakpoint e indica cuando los elementos van a colapsar -->
+  <!-- navbar-dark color de texto blanco, navbar-light color de texto negro, bg-primary (bg background)-->
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <!-- ponemos un container para que podamos indicar el contenedor de nuestros elementos -->
+    <div class="container-fluid">
+      <!-- logo o nombre de la pagina o app -->
+      <a href="#" class="navbar-brand">Mi App</a>
+      <!-- data-bs-target va haver ref, al id de elemento con la clase collapse navbar-collapse que es donde estaran los elementos de nuestro navbar -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#miNavbar">
+        <!-- sandwich -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- !!!IMPORTANTE: Se requiere un div con la clases collapse navbar-collapse, que sirvan de envoltorio para los items de navegacion y que estos colapsen correctamente -->
+      <div class="collapse navbar-collapse" id="miNavbar">
+        <!-- navbar-nav es un contenedor para los li -->
+        <ul class="navbar-nav me-auto">
+          <!--spacing en bootstrap(buscar) me-1, indica m->margen, e->end(right-lado derecho) -->
+          <li class="nav-item me-1">
+            Inicio
+          </li>
+          <li class="nav-item me-1">
+            Contáctenos
+          </li>
+          <li class="nav-item me-1">
+            Acerca de
+          </li>
+        </ul>
+        <button class="btn btn-dark">
+          Login
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
