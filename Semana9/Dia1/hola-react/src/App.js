@@ -1,14 +1,24 @@
+import {useState} from 'react' // es un hook que va a controlar el estado de un componente
 
 export default function App() {
-  let titulo = " Mi App2"
+  //const [estado, funcDelEstado] = useState(estadoInicial)
+const [tareas, setTareas] = useState(["pasear al perro"])
+
+const anadirTareas = () => {
+  setTareas([...tareas, " lavar la ropa"])  //...tareas, permite hacer una lista
+}
+
+const miTitulo = "Mi App"
 
   return (
     <div>
-      <h1>{titulo}</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quibusdam?
-      </p>
+      <h1>{miTitulo}</h1>
+      <ListaTareas tareas={tareas} eliminarTarea={eliminarTarea}/>
       <hr/>
+      <button onClick={anadirTareas}>
+        Anadir tarea
+      </button>
     </div>
   )
 }
+
