@@ -1,6 +1,5 @@
 import axios from "axios"
 
-// const URL = `https://6104aab54b92a000171c5c95.mockapi.io/productos`
 const URL = `${process.env.REACT_APP_API}productos`
 
 const obtenerProductos = async () => {
@@ -15,19 +14,42 @@ const obtenerProductos = async () => {
 }
 
 const crearProducto = async (nuevoProducto) => {
-  try {
-      const headers = {
-          "Content-Type": "application/json"
-      }
-      //.post(URL, DATA, HEADERS)
-      let { data } = await axios.post(URL, nuevoProducto, { headers })
-      return data
-  } catch (error) {
-      throw error
-  }
+    try {
+        const headers = {
+            "Content-Type": "application/json"
+        }
+        //.post(URL, DATA, HEADERS)
+        let { data } = await axios.post(URL, nuevoProducto, { headers })
+        return data
+    } catch (error) {
+        throw error
+    }
+}
+
+const obtenerProductoPorId = async (id) => {
+    try {
+        let { data } = await axios.get(`${URL}/${id}`)
+        return data
+    } catch (error) {
+        throw error
+    }
+}
+
+const editarProducto = async (productoEditado, id) => {
+    try {
+        const headers = {
+            "Content-Type": "application/json"
+        }
+        const { data } = await axios.put(`${URL}/${id}`, productoEditado, { headers })
+        return data
+    } catch (error) {
+        throw error
+    }
 }
 
 export {
-  obtenerProductos,
-  crearProducto
+    obtenerProductos,
+    crearProducto,
+    obtenerProductoPorId,
+    editarProducto
 }

@@ -4,9 +4,11 @@ import Routes from "./Routes"
 export default function App() {
   return (
     <Router>
-      <Switch>
-        <Routes />
-      </Switch>
+      <div className="container p-3">
+        <Switch>
+          <Routes />
+        </Switch>
+      </div>
     </Router>
   )
 }
