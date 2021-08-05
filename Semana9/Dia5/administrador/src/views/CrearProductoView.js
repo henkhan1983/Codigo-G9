@@ -2,8 +2,10 @@ import { useState, useEffect } from "react"
 import { useHistory } from "react-router-dom"
 import Swal from "sweetalert2"
 
-import { crearProducto } from "../services/productosService"
+import { crearProducto, subirArchivo } from "../services/productosService"
 import FormProducto from "../components/FormProducto"
+
+let imagen
 
 export default function CrearProductoView() {
   const [value, setValue] = useState({
@@ -34,17 +36,24 @@ export default function CrearProductoView() {
   const manejarSubmit = async (e) => {
     e.preventDefault()
     try {
-      await crearProducto(value)
+      const urlArchivo = await subirArchivo(imagen) // primero subimos imagen y obtenemos la URL
+      await crearProducto({...value, prod_imagen: urlArchivo}) // vamos a subir los valores del value y le adicionamos el prod_imagen y ya con la imagen obtenida lo agregamos al producto a crear
       await Swal.fire({
-        icon:'success',
-        title:'Producto creado!!',
-        showConfirmButton:false,
-        timer:3000
+        icon: 'success',
+        title: 'Producto creado!!',
+        showConfirmButton: false,
+        timer: 3000
       })
       history.push('/')
     } catch (error) {
       console.error(error)
     }
+  }
+
+  const manejarImagen = (e) => {
+    e.preventDefault()
+    // console.log(e.target.files)
+    imagen = e.target.files[0]
   }
 
   return (
@@ -55,6 +64,7 @@ export default function CrearProductoView() {
         value={value}
         actualizarInput={actualizarInput}
         manejarSubmit={manejarSubmit}
+        manejarImagen={manejarImagen}
       />
     </div>
   )
