@@ -27,6 +27,11 @@ export default function NavTop() {
 								Inicio
 							</Link>
 						</Nav.Link>
+						<Nav.Link>
+							<Link to="/productos">
+								Productos
+							</Link>
+						</Nav.Link>
 					</Nav>
 					<Nav.Link>
 						<Link to="/carrito">
@@ -36,6 +41,12 @@ export default function NavTop() {
 							</Badge>
 						</Link>
 					</Nav.Link>
+					<Nav.Link>
+							<Link to="/login">
+								Ingresar
+							</Link>
+						</Nav.Link>
+						<Nav.Link></Nav.Link>
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>
